@@ -15,6 +15,7 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/quic-go/quic-go/http3"
 	"github.com/tolki-app/gin/internal/bytesconv"
 	"github.com/tolki-app/gin/render"
 	"golang.org/x/net/http2"
@@ -383,6 +384,20 @@ func (engine *Engine) Run(addr ...string) (err error) {
 	address := resolveAddress(addr)
 	debugPrint("Listening and serving HTTP on %s\n", address)
 	err = http.ListenAndServe(address, engine.Handler())
+	return
+}
+
+func (engine *Engine) RunQUIC(addr, certFile, keyFile string) (err error) {
+	defer func() { debugPrintError(err) }()
+
+	if engine.isUnsafeTrustedProxies() {
+		debugPrint("[WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.\n" +
+			"Please check https://pkg.go.dev/github.com/tolki-app/gin#readme-don-t-trust-all-proxies for details.")
+	}
+
+	address := resolveAddress([]string{addr})
+	debugPrint("Listening and serving HTTP on %s\n", address)
+	err = http3.ListenAndServeQUIC(address, certFile, keyFile, engine.Handler())
 	return
 }
 
