@@ -20,8 +20,8 @@ import (
 	"time"
 
 	"github.com/gin-contrib/sse"
-	"github.com/gin-gonic/gin/binding"
-	"github.com/gin-gonic/gin/render"
+	"github.com/tolki-app/gin/binding"
+	"github.com/tolki-app/gin/render"
 )
 
 // Content-Type MIME of the most common data formats.
