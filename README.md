@@ -2,14 +2,14 @@
 
 <img align="right" width="159px" src="https://raw.githubusercontent.com/gin-gonic/logo/master/color.png">
 
-[![Build Status](https://github.com/gin-gonic/gin/workflows/Run%20Tests/badge.svg?branch=master)](https://github.com/gin-gonic/gin/actions?query=branch%3Amaster)
+[![Build Status](https://github.com/tolki-app/gin/workflows/Run%20Tests/badge.svg?branch=master)](https://github.com/tolki-app/gin/actions?query=branch%3Amaster)
 [![codecov](https://codecov.io/gh/gin-gonic/gin/branch/master/graph/badge.svg)](https://codecov.io/gh/gin-gonic/gin)
-[![Go Report Card](https://goreportcard.com/badge/github.com/gin-gonic/gin)](https://goreportcard.com/report/github.com/gin-gonic/gin)
-[![GoDoc](https://pkg.go.dev/badge/github.com/gin-gonic/gin?status.svg)](https://pkg.go.dev/github.com/gin-gonic/gin?tab=doc)
-[![Sourcegraph](https://sourcegraph.com/github.com/gin-gonic/gin/-/badge.svg)](https://sourcegraph.com/github.com/gin-gonic/gin?badge)
+[![Go Report Card](https://goreportcard.com/badge/github.com/tolki-app/gin)](https://goreportcard.com/report/github.com/tolki-app/gin)
+[![GoDoc](https://pkg.go.dev/badge/github.com/tolki-app/gin?status.svg)](https://pkg.go.dev/github.com/tolki-app/gin?tab=doc)
+[![Sourcegraph](https://sourcegraph.com/github.com/tolki-app/gin/-/badge.svg)](https://sourcegraph.com/github.com/tolki-app/gin?badge)
 [![Open Source Helpers](https://www.codetriage.com/gin-gonic/gin/badges/users.svg)](https://www.codetriage.com/gin-gonic/gin)
-[![Release](https://img.shields.io/github/release/gin-gonic/gin.svg?style=flat-square)](https://github.com/gin-gonic/gin/releases)
-[![TODOs](https://badgen.net/https/api.tickgit.com/badgen/github.com/gin-gonic/gin)](https://www.tickgit.com/browse?repo=github.com/gin-gonic/gin)
+[![Release](https://img.shields.io/github/release/gin-gonic/gin.svg?style=flat-square)](https://github.com/tolki-app/gin/releases)
+[![TODOs](https://badgen.net/https/api.tickgit.com/badgen/github.com/tolki-app/gin)](https://www.tickgit.com/browse?repo=github.com/tolki-app/gin)
 
 Gin is a web framework written in [Go](https://go.dev/). It features a martini-like API with performance that is up to 40 times faster thanks to [httprouter](https://github.com/julienschmidt/httprouter). If you need performance and good productivity, you will love Gin.
 
@@ -37,7 +37,7 @@ Gin is a web framework written in [Go](https://go.dev/). It features a martini-l
 With [Go module](https://github.com/golang/go/wiki/Modules) support, simply add the following import
 
 ```
-import "github.com/gin-gonic/gin"
+import "github.com/tolki-app/gin"
 ```
 
 to your code, and then `go [build|run|test]` will automatically fetch the necessary dependencies.
@@ -45,7 +45,7 @@ to your code, and then `go [build|run|test]` will automatically fetch the necess
 Otherwise, run the following Go command to install the `gin` package:
 
 ```sh
-$ go get -u github.com/gin-gonic/gin
+$ go get -u github.com/tolki-app/gin
 ```
 
 ### Running Gin
@@ -58,7 +58,7 @@ package main
 import (
   "net/http"
 
-  "github.com/gin-gonic/gin"
+  "github.com/tolki-app/gin"
 )
 
 func main() {
@@ -92,7 +92,7 @@ A number of ready-to-run examples demonstrating various use cases of Gin on the 
 
 ## Documentation
 
-See [API documentation and descriptions](https://godoc.org/github.com/gin-gonic/gin) for package.
+See [API documentation and descriptions](https://godoc.org/github.com/tolki-app/gin) for package.
 
 All documentation is available on the Gin website.
 
@@ -161,7 +161,7 @@ You can find many useful Gin middlewares at [gin-contrib](https://github.com/gin
 
 ## Users
 
-Awesome project lists using [Gin](https://github.com/gin-gonic/gin) web framework.
+Awesome project lists using [Gin](https://github.com/tolki-app/gin) web framework.
 
 * [gorush](https://github.com/appleboy/gorush): A push notification server written in Go.
 * [fnproject](https://github.com/fnproject/fn): The container native, cloud agnostic serverless platform.
